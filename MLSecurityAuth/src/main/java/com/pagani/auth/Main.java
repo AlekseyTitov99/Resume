@@ -50,6 +50,7 @@ public class Main extends JavaPlugin implements Listener {
         }
     }
 
+    // Dumb i know..
     @EventHandler
     public void onMove(PlayerMoveEvent e){
         if (auths.contains(e.getPlayer().getName())){
