@@ -1,5 +1,0 @@
-name: ArplexFGeradores
-main: br.jotaentity.geradores.Main
-version: 4.1
-softdepend:
-  - Factions
