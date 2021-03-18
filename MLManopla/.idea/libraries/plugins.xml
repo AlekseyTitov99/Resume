@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="plugins">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../servidores/Servidor-2/plugins/DragonFaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../servidores/Servidor-2/plugins/MambaMassiveCore Premium.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../servidores/Servidor-2/plugins" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../servidores/Servidor-2/plugins" recursive="false" />
+  </library>
+</component>

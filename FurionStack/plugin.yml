@@ -1,0 +1,8 @@
+name: FurionStack
+main: com.furion.stack.Main
+version: 1.0.0
+author: Pagani
+depend:
+  - ProtocolLib
+commands:
+  ativar:

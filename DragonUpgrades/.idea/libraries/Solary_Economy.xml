@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Solary-Economy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../api/Solary-Economy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

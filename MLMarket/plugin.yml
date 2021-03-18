@@ -1,0 +1,7 @@
+name: MLMarket
+version: 1.0.1
+main: com.pagani.market.Main
+author: Ghost
+commands:
+  mercado:
+    description: Comando para ver informacao sobre o mercado

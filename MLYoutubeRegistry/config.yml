@@ -1,0 +1,33 @@
+MySQL:
+  Host: ''
+  Usuario: ''
+  Senha: ''
+  Database: ''
+
+# Comando que será executado.
+ComandoGive: 'cash give @player @quantia'
+
+# Mensagem na tela
+TituloPrincipal:
+  Ativar: true
+  Titulo: '&a&l+@quantia'
+  SubTitulo: ''
+
+
+# O titulo tem que conter as seguintes palavras:
+Titulo: 'MineLandia'
+
+# A descrição tem que ter as seguintes informações:
+Descricao:
+  - 'minelandia.com.br'
+
+Multiplicador:
+  Numero: 10
+
+Mensagens:
+  VideonExiste: '&cO video não existe'
+  SemTitulo: '&cO titulo do video precisa conter %titlo_contain%'
+  SemDesc: '&cSua descrição precisa conter: %string%.'
+  VideoNaoeSeu: ''
+  SemCadastro: '&cDesculpe, você não está cadastrado.'
+  Sucesso: '&a+@quantia Cash adicionado em sua conta.'

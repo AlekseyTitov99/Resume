@@ -1,0 +1,9 @@
+name: MLManopla
+main: com.pagani.manopla.Main
+author: Ghost
+version: 1.0.1
+commands:
+  manopla:
+    aliases: [beacon]
+  joia:
+    aliases: [givejoia]

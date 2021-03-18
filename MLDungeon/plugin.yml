@@ -1,0 +1,8 @@
+name: MLDungeon
+main: com.dungeons.system.Main
+version: 1.0.0
+softdepend:
+  - Citizens
+commands:
+  pronto:
+  dungeon:

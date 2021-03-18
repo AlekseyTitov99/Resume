@@ -1,0 +1,6 @@
+name: MLYoutubeRegistry
+main: com.pagani.youtuberegistry.Main
+version: 1.0.1
+author: Ghost
+commands:
+  yt:

@@ -1,0 +1,9 @@
+name: DragonUpgrades
+main: com.pagani.dragonupgrades.Main
+version: V0.1
+author: Pagani
+depend:
+  - Factions
+commands:
+  upgrade:
+    aliases: [upar]

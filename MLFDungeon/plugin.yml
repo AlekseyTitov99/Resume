@@ -1,0 +1,12 @@
+name: MLFDungeon
+main: com.pagani.dungeon.Main
+version: 1.0.0
+author: Pagani
+depend:
+  - Citizens
+commands:
+  party:
+    aliases: [grupo]
+  correio:
+  setdungeonnpc:
+  dungeon:

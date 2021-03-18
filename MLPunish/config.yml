@@ -1,0 +1,35 @@
+
+
+### Configure as punicoes abaixo ###
+### Coloque a permissão na punição, caso o jogador não possuir não irá aparecer :) ###
+
+## ################################ ##
+## BANIMENTO,SILENCIAMENTO,BAN_TEMP ##
+## ################################ ##
+
+equipe:
+
+dia:
+  firstlong: 0
+  mutados: 0
+  banidos: 0
+
+punicoes:
+  flood:
+    nome: 'Flood/Spam'
+    comando: '/punir %player% flood %prova%'
+    permissao: 'dragon.punir.ajudante'
+    type: 'SILENCIAMENTO'
+    time: 180
+  hack:
+    nome: 'Hack'
+    comando: '/punir %player% Hack %prova%'
+    permissao: 'dragon.punir.ajudante'
+    type: 'BANIMENTO'
+    time: 2
+  anti-jogo:
+    nome: 'Anti-Jogo'
+    comando: '/punir %player% Anti-Jogo %prova%'
+    permissao: 'dragon.punir.ajudante'
+    type: 'BAN_TEMP'
+    time: 2

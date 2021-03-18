@@ -1,0 +1,101 @@
+######################
+#+                  +#
+#    CONFIGURACAO    #
+#+     DE DROPS     +#
+#                    #
+######################
+# Configuração, Se vc colocar o digito "1" O drop será pouco drop.
+# se vc colocar o digito a cima de "7" o drop fica OP.
+# vc tem todo o direito de configurar o quanto quiser
+# Bom proveito! :)
+
+COW: 12
+SPIDER: 12
+ZOMBIE: 12
+SKELETON: 12
+BLAZE: 12
+SLIME: 12
+MAGMA: 12
+PIG_ZOMBIE: 12
+IRON_GOLEM: 12
+WITCH: 12
+WITHER: 12
+MUSHROOM_COW: 12
+
+######################
+#+                  +#
+#    CONFIGURACAO    #
+#+      LOOTING     +#
+#                    #
+######################
+# A configuração LOOTCON:
+# são as lootings maiores que 4.
+LOOT1: 1.125
+LOOT2: 1.25
+LOOT3: 1.5
+LOOTCON: 1.75
+
+# Title do mob. Mude a vontade :)
+nome: '&c%quantia% %tipo%'
+
+# Velocidade de spawn de mobs.
+MinSpawnDelay: 60
+MaxSpawnDelay: 100
+
+# Limite geral dos mobs.
+LimiteMobs: 1000
+
+######################
+#+                  +#
+#    CONFIGURACAO    #
+#+      DROPS       +#
+#                    #
+######################
+# Custom drop dos mob.
+
+## xp
+xp:
+  dragon.xp1: 1.25
+  dragon.xp2: 1.50
+  dragon.xp3: 1.75
+
+
+custom:
+  ZOMBIE:
+    ID: 403
+    DATA: 0
+    BRILHO: TRUE
+    CHANCE: 50/200
+    QUANTIA: 1
+    NOME: '&esou um item kk'
+    LORE:
+      - '&eolá meu coleguinha'
+      - '&eolá meu coleguinha'
+      - '&eolá meu coleguinha'
+      - '&eolá meu coleguinha'
+    ENCANTAMENTOS: '38,3'
+    COMANDO: 'SGIVE ZOMBIE %player%'
+
+# Drops dos mobs.
+drops:
+  MUSHROOM_COW:
+    item1:
+      ID: 159
+      DATA: 0
+    item2:
+      ID: 169
+      DATA: 0
+  ZOMBIE:
+    item1:
+      ID: 12
+      DATA: 0
+    item2:
+      ID: 13
+      DATA: 0
+  PIG_ZOMBIE:
+    item1:
+      ID: 155
+      DATA: 0
+    item2:
+      ID: 152
+      DATA: 0

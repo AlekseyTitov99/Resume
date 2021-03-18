@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MambaMassiveCore Premium">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../teste/plugins/MambaMassiveCore Premium.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
