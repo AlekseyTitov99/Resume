@@ -18,6 +18,11 @@ import java.util.Map;
 
 public class SocketThread extends Thread {
 
+    
+    /**
+    * System for one server that didnt have jedis.
+    */
+    
     @Override
     public void interrupt() {
         super.interrupt();
