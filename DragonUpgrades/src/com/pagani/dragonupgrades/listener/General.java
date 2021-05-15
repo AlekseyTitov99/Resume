@@ -30,12 +30,8 @@ public class General implements Listener {
     public void onJoin(PlayerJoinEvent e){
         MPlayer mPlayer = MPlayer.get(e.getPlayer());
         if (mPlayer.hasFaction()){
-            if (Main.cache.containsKey(mPlayer.getFaction().getName())) {
-                return;
-            } else {
-                AtlasStorage.loadFac(mPlayer.getFactionName());
-                return;
-            }
+            User user = Main.cache.get(mPlayer.getFaction().getName());
+            if (user == null)  AtlasStorage.loadFac(mPlayer.getFactionName());
         }
     }
 
