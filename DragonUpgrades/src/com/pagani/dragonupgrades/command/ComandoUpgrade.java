@@ -30,37 +30,6 @@ public class ComandoUpgrade implements CommandExecutor {
             if (args.length == 0){
                 Player p = (Player) s;
                 MPlayer mPlayer = MPlayer.get(p);
-                if (Main.cache.containsKey(mPlayer.getFactionName())){
-                    User user = Main.cache.get(mPlayer.getFactionName());
-                    if (user.isNivel6()){
-                        new BukkitRunnable() {
-                            @Override
-                            public void run() {
-                                Faction faction = mPlayer.getFaction();
-                                    Set<PS> ps = BoardColl.get().getChunks(faction);
-                                    for (PS ps1 : ps) {
-                                        Chunk c = ps1.asBukkitChunk();
-                                        int cx = c.getX() << 4;
-                                        int cz = c.getZ() << 4;
-                                        for (int x = cx; x < cx + 16; x++) {
-                                            for (int z = cz; z < cz + 16; z++) {
-                                                for (int y = 0; y < 256; y++) {
-                                                    if (Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.BEDROCK) {
-                                                        StorageHandler storageHandler = ObsidianBreaker.getStorage();
-                                                        if (storageHandler.isValidBlock(Bukkit.getWorld("world").getBlockAt(x, y, z))) {
-                                                            if (storageHandler.getBlockStatus(Bukkit.getWorld("world").getBlockAt(x, y, z),true).getTotalDurability() >= 25f)continue;
-                                                            storageHandler.getBlockStatus(Bukkit.getWorld("world").getBlockAt(x, y, z), true).setTotalDurability(25f);
-                                                            storageHandler.getBlockStatus(Bukkit.getWorld("world").getBlockAt(x, y, z), true).setDamage(0f);
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                        }.runTaskAsynchronously(Main.getPlugin(Main.class));
-                    }
-                }
                 if (mPlayer.hasFaction()) {
                     Menu.Open2(p);
                 }
