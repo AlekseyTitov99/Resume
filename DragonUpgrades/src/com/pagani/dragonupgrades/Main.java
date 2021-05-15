@@ -61,17 +61,12 @@ public class Main extends JavaPlugin {
                             if (chunk.asBukkitChunk().isLoaded()) {
                                 for (Entity entity : chunk.asBukkitChunk().getEntities()) {
                                     if (entity.getType() == EntityType.PLAYER) {
-                                        new BukkitRunnable() {
-                                            @Override
-                                            public void run() {
-                                                if (chunk.asBukkitChunk().isLoaded()) {
-                                                    Player player = (Player) entity;
-                                                    if (player.isOnline()) {
-                                                        player.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 20 * 8, 2), true);
-                                                    }
-                                                }
-                                            }
-                                        }.runTask(Main.getPlugin(Main.class));
+                                        if (chunk.asBukkitChunk().isLoaded()) {
+                                          Player player = (Player) entity;
+                                            if (player.isOnline()) {
+                                           player.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 20 * 8, 2), true);
+                                         }
+                                       }
                                     }
                                 }
                             }
@@ -79,7 +74,7 @@ public class Main extends JavaPlugin {
                     }
                 }
             }
-        }.runTaskTimerAsynchronously(Main.getPlugin(Main.class),0L,20L * 4L);
+        }.runTaskTimer(Main.getPlugin(Main.class),0L,20L * 4L);
     }
 
     @Override
