@@ -18,7 +18,6 @@ import org.bukkit.inventory.ItemStack;
 public class Menu {
 
     public static void Open2(Player p){
-        Long system = System.currentTimeMillis();
         Inventory inventory = Bukkit.createInventory(null,45,"Tipos de Upgrade");
         double coin = SolaryEconomy.economia.getBalance(p.getName()).doubleValue();
         MPlayer mPlayer = MPlayer.get(p);
@@ -95,8 +94,6 @@ public class Menu {
             inventory.setItem(15,item6);
             inventory.setItem(16,item7);
         }
-        Long sys2 = System.currentTimeMillis();
-        Bukkit.getConsoleSender().sendMessage("§cO processo durou: §e" + String.valueOf(sys2-system));
         p.openInventory(inventory);
     }
 }
