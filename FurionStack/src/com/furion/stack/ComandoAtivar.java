@@ -32,10 +32,7 @@ public class ComandoAtivar implements CommandExecutor {
                         for (final Block bl : StackDeath.getNearbyBlocks(p.getLocation(), 32)) {
                             if (bl.getType().equals(Material.MOB_SPAWNER)) {
                                 CraftCreatureSpawner spawner = (CraftCreatureSpawner) bl.getState().getBlock().getState();
-                                spawner.getTileEntity().update();
                                 spawner.update();
-                                CreatureSpawner creatureSpawner = (CreatureSpawner) bl.getState();
-                                creatureSpawner.update(true);
                             }
                         }
                     }
@@ -52,10 +49,7 @@ public class ComandoAtivar implements CommandExecutor {
                         for (final Block bl : StackDeath.getNearbyBlocks(p.getLocation(), 32)) {
                             if (bl.getType().equals(Material.MOB_SPAWNER)) {
                                 CraftCreatureSpawner spawner = (CraftCreatureSpawner) bl.getState().getBlock().getState();
-                                spawner.getTileEntity().update();
                                 spawner.update();
-                                CreatureSpawner creatureSpawner = (CreatureSpawner) bl.getState();
-                                creatureSpawner.update(true);
                             }
                         }
                     }
